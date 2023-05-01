@@ -15,7 +15,7 @@ var
 
 procedure AddLoginInfo;
 begin
-    crt.clrscr;
+    ClrScr;
     writeln('Enter the website: ');
     RadLn(LoginInfo[Count].Website);
     writeln('Enter the username: ');
@@ -24,3 +24,26 @@ begin
     RadLn(LoginInfo[Count].Password);
     Inc(Count);
 end
+
+procedure ViewLoginInfo;
+var
+  i: integer;
+begin
+  Clrscr;
+  for i := 1 to Count do
+  begin
+    writeln('Website: ', LoginInfo[i].Website);
+    writeln('Username: ', LoginInfo[i].Username);
+    writeln('Password: ', LoginInfo[i].Password);
+    writeln;
+  end;
+end;
+
+procedure MainLoop;
+var
+  Choice: char;
+begin
+  repeat
+
+  until Choice = 'q' or Choice = 'Q';
+end;
