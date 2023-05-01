@@ -44,6 +44,24 @@ var
   Choice: char;
 begin
   repeat
-
+    ClrScr;
+    writeln('1. Add login info');
+    writeln('2. View login info');
+    writeln('Q. Quit');
+    WriteLn('Write your choice: ')
+    Choice := ReadKey;
+    case Choice of
+      '1': AddLoginInfo;
+      '2': ViewLoginInfo;
+      'q','Q';
+      else
+        writeln('Invalid choice, Press key');
+        ReadKey;
+    end;
   until Choice = 'q' or Choice = 'Q';
 end;
+
+begin
+  Count := 1;
+  MainLoop;
+end.
