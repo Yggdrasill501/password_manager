@@ -10,4 +10,4 @@ Functional app, proper encryption and nice UX.
 
 ## Nice to have
 App will be working on back and when u typing somewhere email, suggest u to save it into it,
-google extension, unit test, security tests, create UML diagram how the app/code is working, create concept look in figma.
+google extension, unit test, security tests, create UML diagram how the app/code is working, create concept look in figma, create  random password generator.
